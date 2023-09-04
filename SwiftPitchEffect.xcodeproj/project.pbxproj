@@ -11,7 +11,47 @@
 		4F7C47D92AA6498A001C09B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7C47D82AA6498A001C09B0 /* ContentView.swift */; };
 		4F7C47DB2AA6498B001C09B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F7C47DA2AA6498B001C09B0 /* Assets.xcassets */; };
 		4F7C47DF2AA6498B001C09B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F7C47DE2AA6498B001C09B0 /* Preview Assets.xcassets */; };
+		4F7C47EC2AA649ED001C09B0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4F7C47EB2AA649ED001C09B0 /* README.md */; };
+		4F7C47F12AA649ED001C09B0 /* ParameterSpecBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7C47F02AA649ED001C09B0 /* ParameterSpecBase.swift */; };
+		4F7C47F42AA649ED001C09B0 /* CrossPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7C47F32AA649ED001C09B0 /* CrossPlatform.swift */; };
+		4F7C47F62AA649ED001C09B0 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7C47F52AA649ED001C09B0 /* String+Utils.swift */; };
+		4F7C47FA2AA649ED001C09B0 /* PitchEffectExtensionAudioUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4F7C47F92AA649ED001C09B0 /* PitchEffectExtensionAudioUnit.mm */; };
+		4F7C47FD2AA649ED001C09B0 /* PitchEffectExtensionAUProcessHelper.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 4F7C47FC2AA649ED001C09B0 /* PitchEffectExtensionAUProcessHelper.hpp */; };
+		4F7C48012AA649ED001C09B0 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7C48002AA649ED001C09B0 /* Parameters.swift */; };
+		4F7C48042AA649ED001C09B0 /* PitchEffectExtensionDSPKernel.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 4F7C48032AA649ED001C09B0 /* PitchEffectExtensionDSPKernel.hpp */; };
+		4F7C48072AA649ED001C09B0 /* PitchEffectExtensionMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7C48062AA649ED001C09B0 /* PitchEffectExtensionMainView.swift */; };
+		4F7C48092AA649ED001C09B0 /* MomentaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7C48082AA649ED001C09B0 /* MomentaryButton.swift */; };
+		4F7C480B2AA649ED001C09B0 /* ParameterSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7C480A2AA649ED001C09B0 /* ParameterSlider.swift */; };
+		4F7C48102AA649ED001C09B0 /* AudioUnitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F7C480E2AA649ED001C09B0 /* AudioUnitViewController.xib */; };
+		4F7C48122AA649ED001C09B0 /* ObservableAUParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7C48112AA649ED001C09B0 /* ObservableAUParameter.swift */; };
+		4F7C48142AA649ED001C09B0 /* AudioUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7C48132AA649ED001C09B0 /* AudioUnitViewController.swift */; };
+		4F7C48182AA649ED001C09B0 /* PitchEffectExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4F7C47E92AA649ED001C09B0 /* PitchEffectExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4F7C481E2AA64B50001C09B0 /* PitchEffectAudioUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7C481D2AA64B50001C09B0 /* PitchEffectAudioUnit.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F7C48162AA649ED001C09B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F7C47CB2AA6498A001C09B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F7C47E82AA649ED001C09B0;
+			remoteInfo = PitchEffectExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4F7C481C2AA649ED001C09B0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4F7C48182AA649ED001C09B0 /* PitchEffectExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4F7C47D32AA6498A001C09B0 /* SwiftPitchEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPitchEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,10 +60,37 @@
 		4F7C47DA2AA6498B001C09B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F7C47DC2AA6498B001C09B0 /* SwiftPitchEffect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftPitchEffect.entitlements; sourceTree = "<group>"; };
 		4F7C47DE2AA6498B001C09B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4F7C47E92AA649ED001C09B0 /* PitchEffectExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PitchEffectExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F7C47EB2AA649ED001C09B0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4F7C47EE2AA649ED001C09B0 /* PitchEffectExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PitchEffectExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		4F7C47F02AA649ED001C09B0 /* ParameterSpecBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSpecBase.swift; sourceTree = "<group>"; };
+		4F7C47F32AA649ED001C09B0 /* CrossPlatform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatform.swift; sourceTree = "<group>"; };
+		4F7C47F52AA649ED001C09B0 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		4F7C47F82AA649ED001C09B0 /* PitchEffectExtensionAudioUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PitchEffectExtensionAudioUnit.h; sourceTree = "<group>"; };
+		4F7C47F92AA649ED001C09B0 /* PitchEffectExtensionAudioUnit.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PitchEffectExtensionAudioUnit.mm; sourceTree = "<group>"; };
+		4F7C47FC2AA649ED001C09B0 /* PitchEffectExtensionAUProcessHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PitchEffectExtensionAUProcessHelper.hpp; sourceTree = "<group>"; };
+		4F7C47FF2AA649ED001C09B0 /* PitchEffectExtensionParameterAddresses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PitchEffectExtensionParameterAddresses.h; sourceTree = "<group>"; };
+		4F7C48002AA649ED001C09B0 /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		4F7C48032AA649ED001C09B0 /* PitchEffectExtensionDSPKernel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PitchEffectExtensionDSPKernel.hpp; sourceTree = "<group>"; };
+		4F7C48062AA649ED001C09B0 /* PitchEffectExtensionMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchEffectExtensionMainView.swift; sourceTree = "<group>"; };
+		4F7C48082AA649ED001C09B0 /* MomentaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentaryButton.swift; sourceTree = "<group>"; };
+		4F7C480A2AA649ED001C09B0 /* ParameterSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSlider.swift; sourceTree = "<group>"; };
+		4F7C480F2AA649ED001C09B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = AudioUnitViewController.xib; sourceTree = "<group>"; };
+		4F7C48112AA649ED001C09B0 /* ObservableAUParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableAUParameter.swift; sourceTree = "<group>"; };
+		4F7C48132AA649ED001C09B0 /* AudioUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewController.swift; sourceTree = "<group>"; };
+		4F7C48152AA649ED001C09B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F7C481D2AA64B50001C09B0 /* PitchEffectAudioUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchEffectAudioUnit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4F7C47D02AA6498A001C09B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F7C47E62AA649ED001C09B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				4F7C47D52AA6498A001C09B0 /* SwiftPitchEffect */,
+				4F7C47EA2AA649ED001C09B0 /* PitchEffectExtension */,
 				4F7C47D42AA6498A001C09B0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				4F7C47D32AA6498A001C09B0 /* SwiftPitchEffect.app */,
+				4F7C47E92AA649ED001C09B0 /* PitchEffectExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +138,112 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4F7C47EA2AA649ED001C09B0 /* PitchEffectExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4F7C47EB2AA649ED001C09B0 /* README.md */,
+				4F7C48152AA649ED001C09B0 /* Info.plist */,
+				4F7C47ED2AA649ED001C09B0 /* Common */,
+				4F7C47FE2AA649ED001C09B0 /* Parameters */,
+				4F7C48022AA649ED001C09B0 /* DSP */,
+				4F7C48052AA649ED001C09B0 /* UI */,
+			);
+			path = PitchEffectExtension;
+			sourceTree = "<group>";
+		};
+		4F7C47ED2AA649ED001C09B0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4F7C47EE2AA649ED001C09B0 /* PitchEffectExtension-Bridging-Header.h */,
+				4F7C47EF2AA649ED001C09B0 /* Parameters */,
+				4F7C47F22AA649ED001C09B0 /* Utility */,
+				4F7C47F72AA649ED001C09B0 /* Audio Unit */,
+				4F7C47FB2AA649ED001C09B0 /* DSP */,
+				4F7C480C2AA649ED001C09B0 /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4F7C47EF2AA649ED001C09B0 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				4F7C47F02AA649ED001C09B0 /* ParameterSpecBase.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		4F7C47F22AA649ED001C09B0 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				4F7C47F32AA649ED001C09B0 /* CrossPlatform.swift */,
+				4F7C47F52AA649ED001C09B0 /* String+Utils.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		4F7C47F72AA649ED001C09B0 /* Audio Unit */ = {
+			isa = PBXGroup;
+			children = (
+				4F7C47F82AA649ED001C09B0 /* PitchEffectExtensionAudioUnit.h */,
+				4F7C47F92AA649ED001C09B0 /* PitchEffectExtensionAudioUnit.mm */,
+				4F7C481D2AA64B50001C09B0 /* PitchEffectAudioUnit.swift */,
+			);
+			path = "Audio Unit";
+			sourceTree = "<group>";
+		};
+		4F7C47FB2AA649ED001C09B0 /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				4F7C47FC2AA649ED001C09B0 /* PitchEffectExtensionAUProcessHelper.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		4F7C47FE2AA649ED001C09B0 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				4F7C47FF2AA649ED001C09B0 /* PitchEffectExtensionParameterAddresses.h */,
+				4F7C48002AA649ED001C09B0 /* Parameters.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		4F7C48022AA649ED001C09B0 /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				4F7C48032AA649ED001C09B0 /* PitchEffectExtensionDSPKernel.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		4F7C48052AA649ED001C09B0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4F7C48062AA649ED001C09B0 /* PitchEffectExtensionMainView.swift */,
+				4F7C48082AA649ED001C09B0 /* MomentaryButton.swift */,
+				4F7C480A2AA649ED001C09B0 /* ParameterSlider.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4F7C480C2AA649ED001C09B0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4F7C48112AA649ED001C09B0 /* ObservableAUParameter.swift */,
+				4F7C48132AA649ED001C09B0 /* AudioUnitViewController.swift */,
+				4F7C480D2AA649ED001C09B0 /* Base.lproj */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4F7C480D2AA649ED001C09B0 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				4F7C480E2AA649ED001C09B0 /* AudioUnitViewController.xib */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +254,34 @@
 				4F7C47CF2AA6498A001C09B0 /* Sources */,
 				4F7C47D02AA6498A001C09B0 /* Frameworks */,
 				4F7C47D12AA6498A001C09B0 /* Resources */,
+				4F7C481C2AA649ED001C09B0 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4F7C48172AA649ED001C09B0 /* PBXTargetDependency */,
 			);
 			name = SwiftPitchEffect;
 			productName = SwiftPitchEffect;
 			productReference = 4F7C47D32AA6498A001C09B0 /* SwiftPitchEffect.app */;
 			productType = "com.apple.product-type.application";
+		};
+		4F7C47E82AA649ED001C09B0 /* PitchEffectExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F7C48192AA649ED001C09B0 /* Build configuration list for PBXNativeTarget "PitchEffectExtension" */;
+			buildPhases = (
+				4F7C47E52AA649ED001C09B0 /* Sources */,
+				4F7C47E62AA649ED001C09B0 /* Frameworks */,
+				4F7C47E72AA649ED001C09B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PitchEffectExtension;
+			productName = PitchEffectExtension;
+			productReference = 4F7C47E92AA649ED001C09B0 /* PitchEffectExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +294,9 @@
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					4F7C47D22AA6498A001C09B0 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					4F7C47E82AA649ED001C09B0 = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
@@ -118,6 +315,7 @@
 			projectRoot = "";
 			targets = (
 				4F7C47D22AA6498A001C09B0 /* SwiftPitchEffect */,
+				4F7C47E82AA649ED001C09B0 /* PitchEffectExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +327,17 @@
 			files = (
 				4F7C47DF2AA6498B001C09B0 /* Preview Assets.xcassets in Resources */,
 				4F7C47DB2AA6498B001C09B0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F7C47E72AA649ED001C09B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7C48042AA649ED001C09B0 /* PitchEffectExtensionDSPKernel.hpp in Resources */,
+				4F7C48102AA649ED001C09B0 /* AudioUnitViewController.xib in Resources */,
+				4F7C47FD2AA649ED001C09B0 /* PitchEffectExtensionAUProcessHelper.hpp in Resources */,
+				4F7C47EC2AA649ED001C09B0 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +353,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4F7C47E52AA649ED001C09B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7C48012AA649ED001C09B0 /* Parameters.swift in Sources */,
+				4F7C48072AA649ED001C09B0 /* PitchEffectExtensionMainView.swift in Sources */,
+				4F7C48092AA649ED001C09B0 /* MomentaryButton.swift in Sources */,
+				4F7C48122AA649ED001C09B0 /* ObservableAUParameter.swift in Sources */,
+				4F7C481E2AA64B50001C09B0 /* PitchEffectAudioUnit.swift in Sources */,
+				4F7C47FA2AA649ED001C09B0 /* PitchEffectExtensionAudioUnit.mm in Sources */,
+				4F7C48142AA649ED001C09B0 /* AudioUnitViewController.swift in Sources */,
+				4F7C480B2AA649ED001C09B0 /* ParameterSlider.swift in Sources */,
+				4F7C47F12AA649ED001C09B0 /* ParameterSpecBase.swift in Sources */,
+				4F7C47F42AA649ED001C09B0 /* CrossPlatform.swift in Sources */,
+				4F7C47F62AA649ED001C09B0 /* String+Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F7C48172AA649ED001C09B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F7C47E82AA649ED001C09B0 /* PitchEffectExtension */;
+			targetProxy = 4F7C48162AA649ED001C09B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4F7C480E2AA649ED001C09B0 /* AudioUnitViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F7C480F2AA649ED001C09B0 /* Base */,
+			);
+			name = AudioUnitViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4F7C47E02AA6498B001C09B0 /* Debug */ = {
@@ -264,9 +510,11 @@
 		4F7C47E32AA6498B001C09B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SwiftPitchEffect/SwiftPitchEffect.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftPitchEffect/Preview Content\"";
@@ -302,9 +550,11 @@
 		4F7C47E42AA6498B001C09B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SwiftPitchEffect/SwiftPitchEffect.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftPitchEffect/Preview Content\"";
@@ -337,6 +587,72 @@
 			};
 			name = Release;
 		};
+		4F7C481A2AA649ED001C09B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L2FL95P32D;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PitchEffectExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PitchEffectExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Matt.Pfeiffer.SwiftPitchEffect.PitchEffectExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PitchEffectExtension/Common/PitchEffectExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4F7C481B2AA649ED001C09B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L2FL95P32D;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PitchEffectExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PitchEffectExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Matt.Pfeiffer.SwiftPitchEffect.PitchEffectExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PitchEffectExtension/Common/PitchEffectExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -354,6 +670,15 @@
 			buildConfigurations = (
 				4F7C47E32AA6498B001C09B0 /* Debug */,
 				4F7C47E42AA6498B001C09B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F7C48192AA649ED001C09B0 /* Build configuration list for PBXNativeTarget "PitchEffectExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F7C481A2AA649ED001C09B0 /* Debug */,
+				4F7C481B2AA649ED001C09B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
